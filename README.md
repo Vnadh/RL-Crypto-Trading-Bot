@@ -43,7 +43,6 @@ A reinforcement learning-based cryptocurrency trading bot that implements and co
 | **Max Drawdown** | -1.66  | -1.57  | -0.23  | -0.17      |
 
 ### Algorithm Characteristics
-```plaintext
 PPO:
 - Win Rate: 49.40%
 - Volatility: 0.04
