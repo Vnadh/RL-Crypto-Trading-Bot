@@ -5,7 +5,7 @@
 
 A reinforcement learning-based cryptocurrency trading bot that implements and compares PPO, A2C, and DQN algorithms for BTC/USDT trading strategies.
 
-![Portfolio Value Comparison](img\Figure_1.png)
+![Portfolio Value Comparison](img/Figure_1.png)
 
 ## 📌 Project Overview
 
