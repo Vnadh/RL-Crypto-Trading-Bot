@@ -1,4 +1,3 @@
-```markdown
 # RL Crypto Trading Bot
 
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
@@ -52,7 +51,6 @@ PPO:
 DQN (Best Performer):
 - Highest Sharpe Ratio (1.11)
 - Lowest Drawdown (-0.23%)
-```
 
 ## ⚙️ Installation
 
