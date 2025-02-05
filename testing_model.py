@@ -81,13 +81,13 @@ def visualize_comparison(env, models, model_names):
     
     # Plot Buy & Hold
     bh_values = [p/prices[0]*10000 for p in prices] if prices[0] != 0 else []
-    plt.plot(bh_values, label='Buy & Hold', linestyle='--', color='red')
+    plt.plot(bh_values, label='Buy & Hold', linestyle='-', color='red')
     
     plt.title('Portfolio Value Comparison')
     plt.xlabel('Time Steps')
     plt.ylabel('Portfolio Value (USD)')
     plt.legend()
-    plt.grid(True)
+    #plt.grid(True)
     plt.show()
 
 # Load and prepare data
