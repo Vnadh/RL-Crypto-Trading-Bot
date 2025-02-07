@@ -42,7 +42,6 @@ An advanced reinforcement learning crypto trading system implementing PPO, A2C, 
 | **Max Drawdown** | -2.31  | -1.94  | -1.99  | -0.24      |
 
 ### Key Observations
-```plaintext
 DQN Dominance:
 - Highest returns (1.28%) and Sharpe ratio (2.22)
 - Competitive win rate (51.90%)
