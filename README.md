@@ -6,7 +6,7 @@
 
 An advanced reinforcement learning crypto trading system implementing PPO, A2C, and DQN algorithms for optimized BTC/USDT trading strategies.
 
-![Portfolio Performance Comparison](img\Figure_1.png)
+![Portfolio Performance Comparison](img/Figure_1.png)
 
 ## 📌 Project Highlights
 
