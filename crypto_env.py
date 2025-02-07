@@ -193,12 +193,12 @@ class CryptoTradingEnv(gym.Env):
 
 if __name__ == "__main__":
     # Test environment
-    df = pd.read_csv("btc_data.csv").select_dtypes(include=[np.number]).ffill().bfill().astype(np.float32)
+    df = pd.read_csv("unseen_btc_data.csv").select_dtypes(include=[np.number]).ffill().bfill().astype(np.float32)
     env = CryptoTradingEnv(df)
     
     # Run sample episode
     obs, _ = env.reset()
-    for _ in range(100):
+    for _ in range(1000):
         action = env.action_space.sample()
         obs, reward, done, _, info = env.step(action)
         env.render()

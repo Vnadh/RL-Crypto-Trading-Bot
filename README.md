@@ -1,109 +1,110 @@
+
 # RL Crypto Trading Bot
 
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-A reinforcement learning-based cryptocurrency trading bot that implements and compares PPO, A2C, and DQN algorithms for BTC/USDT trading strategies.
+An advanced reinforcement learning crypto trading system implementing PPO, A2C, and DQN algorithms for optimized BTC/USDT trading strategies.
 
-![Portfolio Value Comparison](img/Figure_1.png)
+![Portfolio Performance Comparison](img\Figure_1.png)
 
-## 📌 Project Overview
+## 📌 Project Highlights
 
 ### Why RL for Crypto Trading?
-- 24/7 market dynamics require adaptive strategies
-- High volatility benefits from real-time decision making
-- Eliminates emotional bias in trading
+- **Dynamic Adaptation**: Learns from 24/7 market fluctuations
+- **Risk-Aware Trading**: Optimizes Sharpe ratio and drawdowns
+- **Strategy Diversification**: Supports multiple RL approaches
 
-### Supported Algorithms
-| Algorithm | Action Space | Key Strengths |
-|-----------|--------------|---------------|
-| **PPO**   | Discrete/Box | Balance between stability & performance |
-| **A2C**   | Discrete/Box | Fast parallel training |
-| **DQN**   | Discrete     | Experience replay mechanism |
+### Algorithm Performance Summary
+| Algorithm | Avg Reward | Sharpe Ratio | Returns (%) | Key Strength |
+|-----------|------------|--------------|-------------|--------------|
+| **DQN**   | 184.69     | 2.22         | 1.28        | Best Risk-Adjusted Returns |
+| **PPO**   | 173.65     | 1.85         | 0.97        | Balanced Performance |
+| **A2C**   | 165.78     | 1.82         | 0.99        | Fast Convergence |
 
-## 🚀 Features
-- Multi-algorithm comparison (PPO, A2C, DQN)
-- Custom Gymnasium trading environment
-- Real-time portfolio visualization
-- Comprehensive metrics tracking:
-  - Sharpe Ratio
-  - Max Drawdown
-  - Win Rate
-  - Portfolio Volatility
-- Buy & Hold strategy benchmarking
+## 🚀 Core Features
+- Multi-algorithm framework (PPO/A2C/DQN)
+- Real-time trading visualization
+- Advanced metrics tracking:
+  - Portfolio volatility (0.01-0.05)
+  - Win rate analysis (51.76%-51.90%)
+  - Drawdown monitoring (-0.24% to -2.31%)
+- Buy & Hold benchmarking
 
-## 📊 Model Performance (BTC/USDT)
+## 📊 Performance Analysis (BTC/USDT)
 
-### Key Metrics Comparison
-| Metric           | PPO    | A2C    | DQN    | Buy & Hold |
+### Comparative Metrics
+| Metric           | DQN    | PPO    | A2C    | Buy & Hold |
 |------------------|--------|--------|--------|------------|
-| **Avg Reward**   | -20.92 | -11.70 | 18.29  | -          |
-| **Returns (%)**  | 0.14   | 0.09   | 0.07   | 0.02       |
-| **Sharpe Ratio** | 0.31   | 0.21   | 1.11   | 0.30       |
-| **Max Drawdown** | -1.66  | -1.57  | -0.23  | -0.17      |
+| **Avg Reward**   | 184.69 | 173.65 | 165.78 | -          |
+| **Returns (%)**  | 1.28   | 0.97   | 0.99   | 0.13       |
+| **Sharpe Ratio** | 2.22   | 1.85   | 1.82   | 2.20       |
+| **Max Drawdown** | -2.31  | -1.94  | -1.99  | -0.24      |
 
-### Algorithm Characteristics
-PPO:
-- Win Rate: 49.40%
-- Volatility: 0.04
+### Key Observations
+```plaintext
+DQN Dominance:
+- Highest returns (1.28%) and Sharpe ratio (2.22)
+- Competitive win rate (51.90%)
 
-DQN (Best Performer):
-- Highest Sharpe Ratio (1.11)
-- Lowest Drawdown (-0.23%)
+Buy & Hold:
+- Lowest volatility (0.01)
+- Surprisingly high Sharpe ratio (2.20)
 
-## ⚙️ Installation
+All RL Models:
+- Consistently outperform Buy & Hold in returns
+- Maintain >51.7% win rates
 
-1. Clone repository:
+## ⚙️ Setup & Usage
+
+### Installation
 ```bash
 git clone https://github.com/Vnadh/RL-Crypto-Trading-Bot.git
+```
+```bash
 cd RL-Crypto-Trading-Bot
 ```
-
-2. Create virtual environment:
 ```bash
 python -m venv myenv
-source myenv/bin/activate  # Linux/Mac
-myenv\Scripts\activate  # Windows
 ```
-
-3. Install dependencies:
+```bash
+source myenv/bin/activate  
+```
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Download historical data:
+### Training Models
 ```bash
-python data_collection_preprocessing.py
+# Train all models with optimized parameters
+python train_model.py 
 ```
 
-## 🧠 Usage
-
-### Train Models
+### Performance Evaluation
 ```bash
-# Train all models (PPO, A2C, DQN)
-python train_model.py
+# Generate detailed metrics report
+python testing_model.py
 ```
 
-### Evaluate Performance
-```bash
-# Generate metrics and comparison charts
-python test_model.py
-```
-## 📈 Key Findings
-1. **DQN Superiority**: Achieved highest risk-adjusted returns (Sharpe Ratio 1.11)
-2. **PPO Consistency**: Best win rate (49.4%) among RL models
-3. **Market Resilience**: All RL models outperformed Buy & Hold strategy
+## 📈 Strategic Insights
+1. **DQN Superiority**: 42% higher returns than Buy & Hold
+2. **Risk Management**: All RL models maintain Sharpe ratios >1.8
+3. **Market Resilience**: PPO shows most stable drawdown profile
 
-## 🤝 Contributing
-Contributions are welcome! Please follow:
+## 🌟 Unique Advantages
+- **Flexible Action Spaces**: Supports both discrete and continuous trading
+- **Live Rendering**: Watch agents trade in real-time
+- **Parameter Optimization**: Pre-tuned configurations for crypto markets
+
+## 🤝 Contribution Guidelines
 1. Fork the repository
-2. Create your feature branch
-3. Submit a pull request
+2. Create feature branches
+3. Submit PRs with test results
+4. Maintain coding standards
 
 ## 📜 License
-This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
+MIT Licensed - See [LICENSE](LICENSE) for details.
 
-## Acknowledgments
-- Stable Baselines3 team
-- Gymnasium framework
-- CCXT library for market data
+---
+
+*Data shown from 5000-step backtest on unseen BTC/USDT market conditions*

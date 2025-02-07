@@ -64,7 +64,8 @@ MODELS_CONFIG = {
             'learning_rate': 3e-4,
             'gamma': 0.99,
             'n_steps': 256,
-            'batch_size': 64
+            'batch_size': 64,
+            'ent_coef':0.01
         },
         'timesteps': 10_00_000
     },
@@ -76,7 +77,8 @@ MODELS_CONFIG = {
             'learning_rate': 7e-4,
             'gamma': 0.95,
             'n_steps': 128,
-            'use_rms_prop': True
+            'use_rms_prop': True,
+             'ent_coef':0.01
         },
         'timesteps': 8_00_000
     },
