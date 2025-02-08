@@ -1,3 +1,5 @@
 myenv/
 ppo_logs/
 __pycache__/
+btc_data.csv
+unseen_btc_data.csv

@@ -33,7 +33,7 @@ def preprocess_data(df):
 
 if __name__ == "__main__":
     # Example usage
-    unseen_btc_data = fetch_crypto_data(limit=10000)
+    unseen_btc_data = fetch_crypto_data(limit=100_000)
     unseen_btc_data = preprocess_data(unseen_btc_data)
     unseen_btc_data.to_csv("unseen_btc_data.csv")
     print("Data saved to unseen_btc_data.csv")
